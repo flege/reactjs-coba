@@ -7,7 +7,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      active: 'Home',
+      active: 'Merah',
     };
   }
 
@@ -17,6 +17,9 @@ class App extends Component {
     this.setState({
       active: menu,
     });
+  }
+  menusaya() {
+    return <img src={this.state.active+".jpg"} width="200"></img>
   }
 
   render() {
@@ -33,7 +36,7 @@ class App extends Component {
             }
 
             return <a
-                    className={style}
+                    className={style+" "+menu}
 
                     // bind untuk membuat 'menu' bisa dikirim ke fungsi 'clicked'
                     onClick={this.clicked.bind(this, menu)}
@@ -45,7 +48,8 @@ class App extends Component {
           </nav>
 
           <div className="info">
-            ini adalah <span className="selected">{this.state.active}</span>
+            ini adalah <span className={"selected "+this.state.active}>{this.state.active}</span><br/><br/>
+            {this.menusaya()}
           </div>
       </div>
     );

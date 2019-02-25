@@ -44,8 +44,29 @@
     background: #ddd;
   }
   
-  .menu.is-active {
-    background: #ddd;
+  .merah.is-active {
+    background: red;
+  }
+  .merah.selected {
+    background: red;
+  }
+  .kuning.is-active {
+    background: yellow;
+  }
+  .kuning.selected {
+    background: yellow;
+  }
+  .hijau.is-active {
+    background: green;
+  }
+  .hijau.selected {
+    background: green;
+  }
+  .biru.is-active {
+    background: aqua;
+  }
+  .biru.selected {
+    background: aqua;
   }
   
   .info {

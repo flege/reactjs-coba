@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './Custom.css';
 import App from './App';
 
-const items = ['Home', 'Tab 2', 'Tab 3', 'Tab 4'];
+const items = ['Merah', 'Kuning', 'Hijau', 'Biru'];
 
 ReactDOM.render(<App items={items}/>, document.getElementById('root'));
