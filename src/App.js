@@ -7,7 +7,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      active: 'Merah',
+      color: 'Merah',
+      img: 'apel.jpg',
     };
   }
 
@@ -15,41 +16,54 @@ class App extends Component {
 
     // untuk memperbarui state sesuai dengan menu yg dipilih
     this.setState({
-      active: menu,
+      color: menu.color,
+      img: menu.img,
     });
   }
-  menusaya() {
-    return <img src={this.state.active+".jpg"} width="200"></img>
-  }
+  // menusaya() {
+  //   var gambar;
+  //   if(this.state.color.toLowerCase() === 'merah'){
+  //     gambar = "apel";
+  //   }else if(this.state.color.toLowerCase() === 'kuning'){
+  //     gambar = "nanas";
+  //   }else if(this.state.color.toLowerCase() === 'hijau'){
+  //     gambar = "alpukat";
+  //   }else if(this.state.color.toLowerCase() === 'biru'){
+  //     gambar = "berry";
+  //   }
+
+  //   return <img src={gambar+".jpg"} width="200"></img>
+  // }
 
   render() {
     return (
       <div id="app">
-
           {/* map akan loop sebanyak menu yg didefinisikan */}
           {/* kemudian mengembalikan elemen <a/> */}
           <nav className="nav">{ this.props.items.map((menu, index) => {
             var style = 'menu';
 
-            if (this.state.active === menu) {
+            if (this.state.color === menu.color) {
               style = `${style} is-active`;
             }
 
             return <a
-                    className={style+" "+menu}
+                    className={style+" "+menu.color}
 
                     // bind untuk membuat 'menu' bisa dikirim ke fungsi 'clicked'
                     onClick={this.clicked.bind(this, menu)}
                     key={index}
                   >
-                    {menu}
+                    {menu.color}
                   </a>;
           }) }
           </nav>
 
           <div className="info">
-            ini adalah <span className={"selected "+this.state.active}>{this.state.active}</span><br/><br/>
-            {this.menusaya()}
+            {/* ini adalah <span className={"selected "+this.state.color}>{this.state.color}</span><br/><br/> */}
+            
+            {/* <img src={this.state.img} width="200"></img> */}
+            {/* {this.menusaya()} */}
           </div>
       </div>
     );
