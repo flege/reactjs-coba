@@ -7,6 +7,7 @@ class App extends Component {
     super(props);
 
     this.state = {
+      color: 'Apple',
       color: 'Merah',
       img: 'apel.jpg',
     };
@@ -16,6 +17,7 @@ class App extends Component {
 
     // untuk memperbarui state sesuai dengan menu yg dipilih
     this.setState({
+      name: menu.name,
       color: menu.color,
       img: menu.img,
     });
@@ -54,15 +56,15 @@ class App extends Component {
                     onClick={this.clicked.bind(this, menu)}
                     key={index}
                   >
-                    {menu.color}
+                    {menu.name}
                   </a>;
           }) }
           </nav>
 
           <div className="info">
-            {/* ini adalah <span className={"selected "+this.state.color}>{this.state.color}</span><br/><br/> */}
+            ini adalah <span className={"selected "+this.state.color}>{this.state.name}</span><br/><br/>
             
-            {/* <img src={this.state.img} width="200"></img> */}
+            <img src={this.state.img} width="200"></img>
             {/* {this.menusaya()} */}
           </div>
       </div>
