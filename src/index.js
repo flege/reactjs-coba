@@ -10,7 +10,7 @@ const items = [
         img   : 'apel.jpg',
     },
     {
-        name : 'Pineapple',
+        name : 'Nanas',
         color : 'Kuning',
         img   : 'nanas.jpg',
     },
