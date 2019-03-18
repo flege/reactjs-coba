@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/reactjs-coba/static/js/runtime~main.37adafe2.js"
   },
   {
-    "revision": "d42f52ce29f8fe799363",
-    "url": "/reactjs-coba/static/js/main.bc0e316b.chunk.js"
+    "revision": "db56992ab7d6ed11e3cf",
+    "url": "/reactjs-coba/static/js/main.2b205ef5.chunk.js"
   },
   {
     "revision": "cfbda0e9061432ca6501",
     "url": "/reactjs-coba/static/js/2.f213e47f.chunk.js"
   },
   {
-    "revision": "d42f52ce29f8fe799363",
-    "url": "/reactjs-coba/static/css/main.28429657.chunk.css"
+    "revision": "db56992ab7d6ed11e3cf",
+    "url": "/reactjs-coba/static/css/main.b9febd4f.chunk.css"
   },
   {
-    "revision": "d8ceb14b8639dba1a52295f9110ef476",
+    "revision": "ad37616ee824bd0484d5d89a31e6359d",
     "url": "/reactjs-coba/index.html"
   }
 ];
