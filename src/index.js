@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 const items = [
     {
-        name : 'Apple',
+        name : 'Apples',
         color : 'Merah',
         img   : 'apel.jpg',
     },
