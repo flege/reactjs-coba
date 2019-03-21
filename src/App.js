@@ -8,7 +8,7 @@ class App extends Component {
 
     this.state = {
       name: 'Apple',
-      color: 'Merah',
+      color: 'merah',
       img: 'apel.jpg',
     };
   }
