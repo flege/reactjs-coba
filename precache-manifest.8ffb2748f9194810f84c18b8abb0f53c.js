@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/reactjs-coba/static/css/main.28429657.chunk.css"
   },
   {
-    "revision": "ea76d6aefd9d379f552c6f108a1362f4",
+    "revision": "d0aae070ebaa13e3b00036579a8a78b5",
     "url": "/reactjs-coba/index.html"
   }
 ];
