@@ -68,6 +68,12 @@
   .biru.selected {
     background: aqua;
   }
+  .gray.is-active {
+    background: gray;
+  }
+  .gray.selected {
+    background: gray;
+  }
   
   .info {
     margin-top: 40px;

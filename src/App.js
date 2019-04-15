@@ -10,17 +10,53 @@ class App extends Component {
       name: 'Apple',
       color: 'merah',
       img: 'apel.jpg',
+      angka1: 0,
+      angka2: 0,
     };
   }
 
   clicked(menu) {
-
     // untuk memperbarui state sesuai dengan menu yg dipilih
     this.setState({
       name: menu.name,
       color: menu.color,
       img: menu.img,
     });
+  }
+  info(name){
+    if(name == 'Calculator'){
+      //display calc
+      return (
+        <div>
+          <span className={"selected "+this.state.color}>{this.state.name}  </span><br/><br/>
+          <input type="number" name="angka1" placeholder="angka 1"  value={this.state.angka1} onChange={this.changeHandler.bind(this)}/>+
+          <input type="number" name="angka2" placeholder="angka 2"  value={this.state.angka2} onChange={this.changeHandler.bind(this)}/>=
+          <span> {this.state.angka1 + this.state.angka2}</span><br/><br/>
+          <button onClick={this.hitung()}>hitung</button>
+        </div>
+      );
+    }else{
+      //display default
+      return (
+        <div>
+          ini adalah <span className={"selected "+this.state.color}>{this.state.name}</span><br/><br/>
+                  
+          <img src={this.state.img} width="200"></img>
+        </div>
+      );
+    }
+  }
+  changeHandler(event) {
+    
+    // this.setState({
+    //   angka1: event.target.value
+    // });
+    this.setState({
+      [event.target.name]: event.target.value 
+    });
+  }
+  hitung(){
+    console.log();
   }
   // menusaya() {
   //   var gambar;
@@ -62,10 +98,7 @@ class App extends Component {
           </nav>
 
           <div className="info">
-            ini adalah <span className={"selected "+this.state.color}>{this.state.name}</span><br/><br/>
-            
-            <img src={this.state.img} width="200"></img>
-            {/* {this.menusaya()} */}
+            {this.info(this.state.name)}
           </div>
       </div>
     );
