@@ -31,8 +31,7 @@ class App extends Component {
           <span className={"selected "+this.state.color}>{this.state.name}  </span><br/><br/>
           <input type="number" name="angka1" placeholder="angka 1"  value={this.state.angka1} onChange={this.changeHandler.bind(this)}/>+
           <input type="number" name="angka2" placeholder="angka 2"  value={this.state.angka2} onChange={this.changeHandler.bind(this)}/>=
-          <span> {this.state.angka1 + this.state.angka2}</span><br/><br/>
-          <button onClick={this.hitung()}>hitung</button>
+          <span> {parseInt(this.state.angka1) + parseInt(this.state.angka2)}</span>
         </div>
       );
     }else{
@@ -54,9 +53,6 @@ class App extends Component {
     this.setState({
       [event.target.name]: event.target.value 
     });
-  }
-  hitung(){
-    console.log();
   }
   // menusaya() {
   //   var gambar;
