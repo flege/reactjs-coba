@@ -22,7 +22,6 @@
   }
   
   .nav {
-    width: 500px;
     margin: 20px auto;
     max-width: 48em;
     border: 1px solid #333;
@@ -73,6 +72,12 @@
   }
   .gray.selected {
     background: gray;
+  }
+  .blue.is-active {
+    background: #020af9;
+  }
+  .blue.selected {
+    background: #020af9;
   }
   
   .info {

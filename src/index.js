@@ -30,6 +30,11 @@ const items = [
         color : 'gray',
         img   : '',
     },
+    {
+        name : 'Profile',
+        color : 'blue',
+        img   : '',
+    },
 ];
 
 ReactDOM.render(<App items={items}/>, document.getElementById('root'));
