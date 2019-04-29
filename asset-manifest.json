@@ -1,14 +1,16 @@
 {
   "main.css": "/reactjs-coba/static/css/main.49399f7f.chunk.css",
-  "main.js": "/reactjs-coba/static/js/main.d73df235.chunk.js",
-  "main.js.map": "/reactjs-coba/static/js/main.d73df235.chunk.js.map",
+  "main.js": "/reactjs-coba/static/js/main.cddbf8a2.chunk.js",
+  "main.js.map": "/reactjs-coba/static/js/main.cddbf8a2.chunk.js.map",
   "runtime~main.js": "/reactjs-coba/static/js/runtime~main.37adafe2.js",
   "runtime~main.js.map": "/reactjs-coba/static/js/runtime~main.37adafe2.js.map",
-  "static/js/2.c39fed63.chunk.js": "/reactjs-coba/static/js/2.c39fed63.chunk.js",
-  "static/js/2.c39fed63.chunk.js.map": "/reactjs-coba/static/js/2.c39fed63.chunk.js.map",
+  "static/css/2.5af88395.chunk.css": "/reactjs-coba/static/css/2.5af88395.chunk.css",
+  "static/js/2.0df2805e.chunk.js": "/reactjs-coba/static/js/2.0df2805e.chunk.js",
+  "static/js/2.0df2805e.chunk.js.map": "/reactjs-coba/static/js/2.0df2805e.chunk.js.map",
   "index.html": "/reactjs-coba/index.html",
-  "precache-manifest.c1aa8c1c9cf5114f325ececcbc8a829f.js": "/reactjs-coba/precache-manifest.c1aa8c1c9cf5114f325ececcbc8a829f.js",
+  "precache-manifest.29f2a39c8ff356683db0ef30aecfe36b.js": "/reactjs-coba/precache-manifest.29f2a39c8ff356683db0ef30aecfe36b.js",
   "service-worker.js": "/reactjs-coba/service-worker.js",
+  "static/css/2.5af88395.chunk.css.map": "/reactjs-coba/static/css/2.5af88395.chunk.css.map",
   "static/css/main.49399f7f.chunk.css.map": "/reactjs-coba/static/css/main.49399f7f.chunk.css.map",
   "static/media/logo.svg": "/reactjs-coba/static/media/logo.ee7cd8ed.svg"
 }
