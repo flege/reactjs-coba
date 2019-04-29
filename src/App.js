@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Pr from './Profile.js';
 import Calc from './Calculator.js';
+import toast from 'toasted-notes';
+import 'toasted-notes/src/styles.css';
 
 class App extends Component {
   constructor(props) {
@@ -13,6 +15,8 @@ class App extends Component {
       color: 'merah',
       img: 'apel.jpg'
     };
+
+    toast.notify('Hello world!');
   }
 
   clicked(menu) {
